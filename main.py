@@ -1,3 +1,8 @@
+from datetime import timedelta, datetime
+
+
+current = datetime.now()
+
 d = dict()
 
 def f(n):
@@ -13,4 +18,10 @@ def f(n):
         d[n] = t
         return t
 
-print(f(27))
+
+n = 1
+while True:
+    if timedelta(seconds=30) + current < datetime.now():
+        break
+    print(f"N: {n}, f: {f(n)}")
+    n += 1
