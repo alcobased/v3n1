@@ -1,3 +1,5 @@
+# 3N+1 problem
+
 from datetime import timedelta, datetime
 
 
